@@ -1,0 +1,33 @@
+[user]
+	email = ab0988956087@gamil.com
+	name = Leo Wang
+[push]
+	autoSetupRemote = true
+	default = current
+	followTags = true
+[alias]
+	logg = log --graph --oneline --decorate
+[core]
+	excludesfile = /home/leo/.gitignore_global
+
+# update main branch then remove last branch
+[alias]
+    mp = "!git checkout main && git pull --rebase && git branch -D @{-1}"
+[alias]
+	pu = push -u
+	put ="!git push -u && git push -u --tags"
+	amend = commit --amend --no-edit
+	cp= cherry-pick
+	ssm= stash save -m
+	sp= stash pop
+	td= tag -d
+	pod= push origin -d
+	sl= stash list
+	s= stash
+	res=restore .
+	sd=stash drop
+	aa="!git add . && git amend"
+[core]
+	hooksPath = ~/git-hooks
+[init]
+	defaultBranch = main
