@@ -128,6 +128,12 @@ alias d='docker'
 alias apt-up='sudo apt-get update && sudo apt-get upgrade'
 alias g='git'
 alias c='code'
+alias ya='yadm'
+alias ..='cd ..'                                             # Go up one directory
+alias ...='cd ../..'                                         # Go up two directories
+alias ....='cd ../../..'                                     # Go up three directories
+alias py3='python3'                                          # python3
+alias kc='kubectl'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
