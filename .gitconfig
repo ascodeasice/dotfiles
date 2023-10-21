@@ -5,18 +5,17 @@
 	autoSetupRemote = true
 	default = current
 	followTags = true
-[alias]
-	logg = log --graph --oneline --decorate
 [core]
 	excludesfile = /home/leo/.gitignore_global
 
+[alias]
+	logg = log --graph --oneline --decorate
 # update main branch then remove last branch
-[alias]
-    mp = "!git checkout main && git pull --rebase && git branch -D @{-1}"
-[alias]
+	mp = "!git checkout main && git pull --rebase && git branch -D @{-1}"
 	pu = push -u
 	put ="!git push -u && git push -u --tags"
-	amend = commit --amend --no-edit
+	amend = commit --amend
+	ane = commit --amend --no-edit
 	cp= cherry-pick
 	ssm= stash save -m
 	sp= stash pop
