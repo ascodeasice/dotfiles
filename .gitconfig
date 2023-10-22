@@ -10,7 +10,7 @@
 
 [alias]
 	logg = log --graph --oneline --decorate
-# update main branch then remove last branch
+	# update main branch then remove last branch
 	mp = "!git checkout main && git pull --rebase && git branch -D @{-1}"
 	pu = push -u
 	put ="!git push -u && git push -u --tags"

@@ -10,8 +10,10 @@ alias ....='cd ../../..'                                     # Go up three direc
 alias py3='python3'                                          # python3
 
 if type -q eza
-  alias ll "eza -l -g --time-style iso"
-  alias la "ll -a"
-  alias llt "ll -T -L 2"
-  alias lo "eza -1"
+  alias ld "eza -lD"                                                        #ls directorys
+  alias lf "eza -lF  --color=always | grep -v /  | less -r"                 # ls files
+  alias lh "eza -dl .*  --group-directories-first --color=always | less -r" # ls hidden files
+  alias la "eza -al --color=always --group-directories-first  | less -r"    # ls all, with directory first
+  alias lt "eza --tree --level=3  --color=always --group-directories-first | less -r" # ls tree
+  alias lo "eza -1  --color=always --group-directories-first | less -r"     # one line
 end
