@@ -28,7 +28,5 @@
 	sd=stash drop
 	aa="!git add . && git amend"
 	aan="!git add . && git commit --amend --no-edit"
-[core]
-	hooksPath = ~/git-hooks
 [init]
 	defaultBranch = main

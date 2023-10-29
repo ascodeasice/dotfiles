@@ -134,6 +134,7 @@ alias ...='cd ../..'                                         # Go up two directo
 alias ....='cd ../../..'                                     # Go up three directories
 alias py3='python3'                                          # python3
 alias kc='kubectl'
+alias copy='xclip -selection clipboard'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
