@@ -135,6 +135,7 @@ alias ....='cd ../../..'                                     # Go up three direc
 alias py3='python3'                                          # python3
 alias kc='kubectl'
 alias copy='xclip -selection clipboard'
+alias bundletool='java -jar ~/bundletool-all-1.15.5.jar'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -144,3 +145,17 @@ eval "$(rbenv init -)"
 export DATABASE_PASSWORD="<role_password>"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+export ANDROID_SDK_ROOT=$HOME/Android
+export ANDROID_HOME=$ANDROID_SDK_ROOT
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d' ' -f2)
+export ADB_SERVER_SOCKET=tcp:$WSL_HOST:5037
+eval "$(/bin/brew shellenv)"
+eval "$(/bin/brew shellenv)"
+eval "$(/bin/brew shellenv)"

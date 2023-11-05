@@ -9,6 +9,7 @@ alias ...='cd ../..'                                         # Go up two directo
 alias ....='cd ../../..'                                     # Go up three directories
 alias py3='python3'                                          # python3
 alias copy='xclip -selection clipboard'
+alias bundletool='java -jar ~/bundletool-all-1.15.5.jar'
 
 if type -q eza
   alias ld "eza -lD"                                                        #ls directorys
@@ -16,7 +17,7 @@ if type -q eza
   alias lh "eza -dl .*  --group-directories-first --color=always | less -r" # ls hidden files
   alias la "eza -al --color=always --group-directories-first  | less -r"    # ls all, with directory first
   alias lt "eza --tree --level=3  --color=always --group-directories-first | less -r" # ls tree
-  alias lo "eza -1  --color=always --group-directories-first | less -r"     # one line
+  alias   lo "eza -1  --color=always --group-directories-first | less -r"     # one line
 end
 
 # >>> conda initialize >>>
