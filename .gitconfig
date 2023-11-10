@@ -30,5 +30,6 @@
 	sd=stash drop
 	aa="!git add . && git amend"
 	aan="!git add . && git commit --amend --no-edit"
+	st=status
 [init]
 	defaultBranch = main
