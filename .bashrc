@@ -136,6 +136,8 @@ alias py3='python3'                                          # python3
 alias kc='kubectl'
 alias copy='xclip -selection clipboard'
 alias bundletool='java -jar ~/bundletool-all-1.15.5.jar'
+alias ktc='kotlinc'
+alias kt='kotlin'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
