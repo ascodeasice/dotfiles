@@ -34,5 +34,9 @@
 	co=checkout
 	nah = "!f(){ git reset --hard; git clean -df; if [ -d ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]; then git rebase --abort; fi; }; f"
 	re=remote
+	back=reset HEAD^ --hard
+	rv = remote -v
+	# diff last
+	dl = diff HEAD^ HEAD
 [init]
 	defaultBranch = main
