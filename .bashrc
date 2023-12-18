@@ -138,6 +138,7 @@ alias copy='xclip -selection clipboard'
 alias bundletool='java -jar ~/bundletool-all-1.15.5.jar'
 alias ktc='kotlinc'
 alias kt='kotlin'
+alias ex='explorer.exe'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
