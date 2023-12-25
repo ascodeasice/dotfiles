@@ -7,7 +7,7 @@
 	followTags = true
 [core]
 	excludesfile = /home/leo/.gitignore_global
-
+	editor=vim
 [alias]
 	logg = log --graph --oneline --decorate
 	# update main branch then remove last branch
