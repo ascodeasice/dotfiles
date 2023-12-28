@@ -10,6 +10,7 @@ alias ....='cd ../../..'                                     # Go up three direc
 alias py3='python3'                                          # python3
 alias copy='xclip -selection clipboard'
 alias bundletool='java -jar ~/bundletool-all-1.15.5.jar'
+alias ex="explorer.exe"
 
 if type -q eza
   alias ld "eza -lD"                                                        #ls directorys
